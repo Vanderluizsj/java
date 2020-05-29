@@ -2,18 +2,20 @@
 package ex7_conta.corrente.poupança;
 
 public class Conta {
+    //metodo protected usado para que os atributos sejam passados por herança
     protected String titular;
     protected int numero;
     protected double saldo;           
     protected double rendimentos;
-
+    
+    //contrutor simples(receita de como será feito cada objeto)
     public Conta(String titular, int numero, double saldo, double rendimentos) {
         this.titular = titular;
         this.numero = numero;
         this.saldo = saldo;
         this.rendimentos = rendimentos;
     }
-
+    //getters e setters da classe mae
     public String getTitular() {
         return titular;
     }
@@ -45,7 +47,7 @@ public class Conta {
     public void setRendimentos(double rendimentos) {
         this.rendimentos = rendimentos;
     }
-    
+    //metodos classe mae
     public void depositar(double valor){
     saldo+=valor;
     }
@@ -58,6 +60,7 @@ public class Conta {
         System.out.println("Saldo insuficiente!");
     }
     }
+    //metodo que sera sobreescrito
     public void calculaRendimento(){
     
     }
