@@ -11,14 +11,14 @@ public class Triangulo extends FiguraGeometrica{
     @Override
     public double calculaArea(){
         double area = (base*altura)/2;
-        System.out.println("Area triangulo"+area);
+        System.out.println("Area triangulo: "+area);
         return area;
        
     }
     @Override
      public double calculaPerimetro(){
         double perimetro = base*3;
-        System.out.println("Perimetro triangulo"+perimetro);
+        System.out.println("Perimetro triangulo: "+perimetro);
         return perimetro;
        
     }

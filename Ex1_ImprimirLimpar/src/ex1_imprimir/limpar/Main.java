@@ -1,21 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ex1_imprimir.limpar;
 
-/**
- *
- * @author Amishel
- */
+import javax.swing.JFrame;
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        JFrame Janela1 = new ex1Gui();  //cria o objeto Janela1 do tipo jFrame com nome ex1Gui
+        Janela1.setVisible(true); //
     }
     
 }
